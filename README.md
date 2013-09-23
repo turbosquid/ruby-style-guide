@@ -696,6 +696,36 @@ you if you forget either of the rules above!
     # good
     salary = 1000
     ```
+* Prefer full english words over abbreviations, except for commonly 
+  abbreviated words
+
+    ```Ruby
+    # bad
+    array.each_with_index do |itm, idx|
+      puts [idx, itm]
+    end
+
+    # good
+    array.each_with_index do |item, index|
+      puts [index, item]
+    end
+
+    # also ok
+    color_attr = :blue
+    ```
+
+  When using one line block, single character variable are ok
+
+    ```Ruby
+    # bad
+    fields.each { |fld| puts fld }
+
+    # good
+    fields.each { |field| puts field }
+
+    # also ok
+    fields.each { |f| puts f }
+    ```
 
 * Use `snake_case` for symbols, methods and variables.
 
