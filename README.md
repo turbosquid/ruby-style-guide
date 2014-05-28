@@ -1517,6 +1517,22 @@ strings.
 * Rely on the fact that as of Ruby 1.9 hashes are ordered.
 * Never modify a collection while traversing it.
 
+* Avoid leaving a trailing comma after that last entry in a multi-line hash.
+
+    ```Ruby
+    # bad 
+    hash = {
+      one: 1,
+      two: 2,
+    }
+
+    # good
+    hash = {
+      one: 1,
+      two: 2
+    }
+    ```
+
 ## Strings
 
 * Prefer string interpolation instead of string concatenation:
