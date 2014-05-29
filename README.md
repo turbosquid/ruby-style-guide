@@ -1517,7 +1517,7 @@ strings.
 * Rely on the fact that as of Ruby 1.9 hashes are ordered.
 * Never modify a collection while traversing it.
 
-* Avoid leaving a trailing comma after last entry in a hash or array.
+* Avoid leaving a trailing comma after the last entry in a hash or array.
 
     ```Ruby
     # bad 
