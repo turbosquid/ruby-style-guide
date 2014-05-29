@@ -1517,7 +1517,7 @@ strings.
 * Rely on the fact that as of Ruby 1.9 hashes are ordered.
 * Never modify a collection while traversing it.
 
-* Avoid leaving a trailing comma after that last entry in a multi-line hash.
+* Avoid leaving a trailing comma after last entry in a hash or array.
 
     ```Ruby
     # bad 
@@ -1531,6 +1531,12 @@ strings.
       one: 1,
       two: 2
     }
+ 
+    # bad
+    array = [1, 2, 3,]
+
+    # good
+    array = [1, 2, 3]
     ```
 
 ## Strings
